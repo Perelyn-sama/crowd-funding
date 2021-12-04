@@ -1,0 +1,130 @@
+{
+	"compiler": {
+		"version": "0.6.0+commit.26b70077"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "depositeToSmartContract",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalanceofSmartContract",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "startingdate",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "finishingdate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expectedcost",
+						"type": "uint256"
+					}
+				],
+				"name": "getProjectInfo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "project",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "ProjectName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "StartingDate",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "finishingDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expectedCost",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawFromContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/CrowdFund.sol": "CrowdFunding"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/CrowdFund.sol": {
+			"keccak256": "0xaa1d578dda53ee100d0778629910ad916601260c3c8409e69242d9aafa83cf7a",
+			"urls": [
+				"bzz-raw://f2f7b7a1ebe32c1bc64d4393d70639a5a2dc91b47a8a7d1795807d792f13831d",
+				"dweb:/ipfs/Qme3ZP16n93EBXQFzFiCuX2YQggynP3qGnv9dP7u7hmFMQ"
+			]
+		}
+	},
+	"version": 1
+}
