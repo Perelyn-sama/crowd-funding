@@ -8,6 +8,19 @@ contract CrowdFunding {
     uint amount;
     uint goal;
 
+    // Payable address can receive Ether
+    address payable public owner;
+
+    // contract address of the contract
+    address payable public contractAddr;
+
+    // Payable constructor can receive Ether
+    constructor() internal payable {
+        owner = payable(msg.sender);
+        contractAddr = payable(address(this));
+    }
+
+
     // To set values for state variables 
     function setVaribles (uint _amount, uint _goal ) public view {
         _amount = amount;
@@ -52,7 +65,12 @@ contract CrowdFunding {
     // Defining function to deposit ether into contract 
     function deposit(uint _value) payable external validate {
         require( msg.value == amount);
-        emit Transfer(msg.sender, address(this), _value * 10 ** 18);
+        // I don't think event are needed for transfers
+        // emit Transfer(msg.sender, address(this), _value * 10 ** 18);
+
+        (bool success, ) = owner.call{value: amount}("");
+        // (bool success, ) = owner.call{value: _amount}("");
+        require(success, "Failed to send Ether");
     }
 
     // Defining function to get balance of contract address 
@@ -62,7 +80,8 @@ contract CrowdFunding {
 
     // Defining a function to withdraw fund to owner account
     function withdraw( uint _value) public validate{
-        emit Transfer(address(this), msg.sender, _value * 10 ** 18);
+        // I don't think event are needed for transfers
+        // emit Transfer(address(this), msg.sender, _value * 10 ** 18);
     }
 
 }
