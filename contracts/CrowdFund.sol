@@ -68,9 +68,10 @@ contract CrowdFunding {
         // I don't think event are needed for transfers
         // emit Transfer(msg.sender, address(this), _value * 10 ** 18);
 
-        (bool success, ) = owner.call{value: amount}("");
+        // the call keyword keeps bitching
+        // (bool success, ) = owner.call{value: amount}("");
         // (bool success, ) = owner.call{value: _amount}("");
-        require(success, "Failed to send Ether");
+        // require(success, "Failed to send Ether");
     }
 
     // Defining function to get balance of contract address 
