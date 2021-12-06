@@ -1,0 +1,27 @@
+{
+  "name": "crowd-funding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "soljson-v0.6.0+commit.26b70077.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "solidity-shell": "^0.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Perelyn-sama/crowd-funding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Perelyn-sama/crowd-funding/issues"
+  },
+  "homepage": "https://github.com/Perelyn-sama/crowd-funding#readme"
+}
