@@ -7,6 +7,10 @@
     "test": "test"
   },
   "dependencies": {
+    "@openzeppelin/contracts": "^2.5.1",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "chai": "^4.3.4",
+    "openzeppelin-test-helpers": "^0.5.1",
     "solidity-shell": "^0.0.6"
   },
   "devDependencies": {},
