@@ -1,1 +1,3 @@
-I want to make a full stack crowdfunding app
+# Crowd Funding
+
+I wanted to make a full stack crowdfunding app
